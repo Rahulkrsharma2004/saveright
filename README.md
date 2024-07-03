@@ -22,8 +22,7 @@ This project is a simple OTP (One Time Password) validation system. It allows us
 
 1. **Clone the repository**:
     ```bash
-    git clone <repository-url>
-    cd otp-validation
+    git clone https://github.com/Rahulkrsharma2004/saveright
     ```
 
 2. **Open `index.html` in your browser**:

@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.error {
+  color: red;
+}
+
+#otp-screen,
+#phone-screen {
+  max-width: 350px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin: auto;
+  padding: 25px;
+}
+.custom-swal-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.swal-button {
+  background-color: #7cd1f9;
+  color: #fff;
+  border: none;
+  box-shadow: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 24px;
+  margin: 0;
+  cursor: pointer;
+}
+
+#otp-inputs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.otp-input {
+  width: 10px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .otp-input {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}

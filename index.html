@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Validation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/sweetalert/dist/sweetalert.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div id="phone-screen">
+        <h2>Enter Phone Number</h2>
+        <input type="text" id="phone-number" placeholder="Enter your phone number">
+        <button onclick="sendOTP()">Send OTP</button>
+        <p id="phone-error" class="error"></p>
+    </div>
+
+    <div id="otp-screen" style="display:none;">
+        <h2>Enter OTP</h2>
+        <div id="otp-inputs">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+            <input type="text" maxlength="1" class="otp-input">
+        </div>
+        <button onclick="validateOTP()">Submit OTP</button>
+        <p id="otp-error" class="error"></p>
+    </div>
+
+    <div id="welcome-screen" style="display:none;">
+        <h2 style="color: black;text-decoration: underline;">WELCOME</h2>
+        <h4>Hello, Hope You are doing well and Welcome To the <b>"Saveright"</b>  </h4>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

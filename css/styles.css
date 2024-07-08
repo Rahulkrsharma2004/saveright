@@ -2,6 +2,13 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
+  background: linear-gradient(to right, #79acd1, #fe7be8);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .error {
@@ -15,29 +22,21 @@ body {
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   margin: auto;
   padding: 25px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.399);
+  backdrop-filter: blur(10px, 0, 0, 0);
 }
-.custom-swal-button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 0 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
+#phone-screen img {
+  width: 200px;
+  height: 200px;
+  background: transparent;
 }
-.swal-button {
-  background-color: #7cd1f9;
-  color: #fff;
-  border: none;
-  box-shadow: none;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 0 24px;
-  margin: 0;
-  cursor: pointer;
+#phone-number {
+  border: 2px solid black;
 }
-
+#phone-number::placeholder {
+  color: black;
+}
 #otp-inputs {
   display: flex;
   justify-content: center;
@@ -45,11 +44,11 @@ body {
 }
 
 .otp-input {
-  width: 10px;
+  width: 300px;
   height: 40px;
   text-align: center;
   font-size: 18px;
-  border: 1px solid #ccc;
+  border: 2px solid #000000;
   border-radius: 4px;
 }
 
@@ -62,5 +61,7 @@ body {
     width: 30px;
     height: 30px;
     font-size: 16px;
+    border: 2px solid #000000;
+    border-radius: 4px;
   }
 }
